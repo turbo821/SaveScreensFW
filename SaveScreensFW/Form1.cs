@@ -101,7 +101,7 @@ namespace SaveScreensFW
             {
                 using (StreamReader reader = new StreamReader("close_path.log"))
                 {
-                    pathBox.Text = reader.ReadToEnd();
+                    pathBox.Text = reader.ReadLine();
                 }
             }
             catch { }
