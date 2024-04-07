@@ -19,7 +19,7 @@ namespace SaveScreensFW
             InitializeComponent();
         }
 
-        private void saveButton_Click(object sender, EventArgs e)
+        private async void saveButton_Click(object sender, EventArgs e)
         {
             string basePath = pathBox.Text;
             GetClipboardImage(out Image image);
@@ -58,6 +58,13 @@ namespace SaveScreensFW
             catch (Exception ex)
             {
                 descriptionLabel.Text = ex.Message;
+            }
+            finally
+            {
+                descriptionLabel.Location = new Point(85, 53);
+                label1.BackColor = Color.LimeGreen;
+                await Task.Delay(2000);
+                label1.BackColor = SystemColors.Control;
             }
         }
 

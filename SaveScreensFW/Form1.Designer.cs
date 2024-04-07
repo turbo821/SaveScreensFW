@@ -31,13 +31,14 @@
             this.descriptionLabel = new System.Windows.Forms.Label();
             this.pathBox = new System.Windows.Forms.TextBox();
             this.saveButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // descriptionLabel
             // 
-            this.descriptionLabel.Location = new System.Drawing.Point(56, 41);
+            this.descriptionLabel.Location = new System.Drawing.Point(57, 51);
             this.descriptionLabel.Name = "descriptionLabel";
-            this.descriptionLabel.Size = new System.Drawing.Size(200, 23);
+            this.descriptionLabel.Size = new System.Drawing.Size(194, 23);
             this.descriptionLabel.TabIndex = 0;
             this.descriptionLabel.Text = "Enter the folder for saving screenshots";
             // 
@@ -58,11 +59,19 @@
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(94, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 12);
+            this.label1.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(287, 192);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.pathBox);
             this.Controls.Add(this.descriptionLabel);
@@ -79,6 +88,7 @@
         private System.Windows.Forms.Label descriptionLabel;
         private System.Windows.Forms.TextBox pathBox;
         private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 
